@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 RUN npm install -g node-gyp
 
 # 4. 克隆代码
-RUN git clone https://github.com/gavinliuisme/ws-scrcpy.git .
+RUN git clone https://github.com/NetrisTV/ws-scrcpy.git .
 
 # 5. 安装依赖并构建
 RUN npm ci --legacy-peer-deps
