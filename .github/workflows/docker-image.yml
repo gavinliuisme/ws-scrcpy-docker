@@ -25,7 +25,8 @@ jobs:
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+      # password: ${{ secrets.GITHUB_TOKEN }}
+        password: ${{ secrets.CR_PAT }}
 
     # 3. 构建并推送镜像
     # 注意：这里替换了原来的 docker build 命令，使用官方 action 更稳定
